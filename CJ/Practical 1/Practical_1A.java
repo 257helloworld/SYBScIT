@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Practical_1_a {
+class Practical_1A {
     public static void main(String args[]) {
         int n;
         Scanner s = new Scanner(System.in);

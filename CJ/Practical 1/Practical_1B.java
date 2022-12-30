@@ -1,6 +1,6 @@
 /* Write a java program to display patterns */
 
-class Practical_1_b {
+class Practical_1B {
     public static void pattern1(){
         System.out.println("Pattern 1");
         /*

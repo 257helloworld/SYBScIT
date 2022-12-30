@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-class Practical_1_c {
+class Practical_1C {
     public static void main(String args[]) {
         double r, pi = 3.14;
         Scanner s = new Scanner(System.in);
