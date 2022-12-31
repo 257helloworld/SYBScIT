@@ -52,6 +52,7 @@ class Practical_4A {
         System.out.print("Enter size of array: ");
         size = s.nextInt();
         System.out.println("------------------------");
+        
         int arr[] = new int[size];
         // Taking array elements input
         System.out.print("Enter array elements: ");
