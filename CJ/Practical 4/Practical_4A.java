@@ -73,5 +73,7 @@ class Practical_4A {
         // Descending
         System.out.print("Descending Array: ");
         sd.desc(arr,size);
+
+        s.close();
     }
 }

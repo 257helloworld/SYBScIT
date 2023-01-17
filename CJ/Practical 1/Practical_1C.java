@@ -16,5 +16,7 @@ class Practical_1C {
 
         // Perimeter of circle
         System.out.println("Perimeter: " + (2 * pi * r));
+
+        s.close();
     }
 }
