@@ -9,7 +9,6 @@ abstract class Shape {
 }
 
 class Circle extends Shape {
-    Scanner s = new Scanner(System.in);
     double pi = 3.14;
     public void area() {
         r = s.nextDouble();
@@ -26,7 +25,6 @@ class Triangle extends Shape {
 }
 
 class Rectangle extends Shape {
-    Scanner s = new Scanner(System.in);
     public void area() {
     	length = s.nextDouble();
         breadth = s.nextDouble();
