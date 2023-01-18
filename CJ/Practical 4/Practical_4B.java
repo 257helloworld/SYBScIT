@@ -18,7 +18,6 @@ public class Practical_4B {
         b = s.nextInt();
         System.out.println("------------------------");
         Addition a1 = new Addition(a,b);
-        
         s.close();
     }
 }

@@ -53,5 +53,7 @@ public class Practical_4C {
         Rectangle r1 = new Rectangle();
         r1.area();
         System.out.println("------------------------");
+
+        s.close();
     }
 }
