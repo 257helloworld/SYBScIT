@@ -18,7 +18,7 @@ class Circle extends Shape {
 
 class Triangle extends Shape {
     public void area() {
-    base = s.nextDouble();
+        base = s.nextDouble();
       	height = s.nextDouble();
         System.out.println("Area of Triangle: " + (0.5 * base * height));
     }

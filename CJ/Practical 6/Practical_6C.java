@@ -2,8 +2,6 @@
 
 import java.util.Scanner;
 
-import javax.sound.midi.spi.MidiFileReader;
-
 public class Practical_6C {
     static void printMatrix(int m[][], int r, int c) {
         for(int i = 0; i < r; i++) {
