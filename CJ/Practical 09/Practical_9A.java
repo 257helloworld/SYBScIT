@@ -20,7 +20,7 @@ public class Practical_9A implements ActionListener {
         l1.setBounds(x,y,80,20);
         t1.setBounds(x+90,y,100,20);
         b1.setBounds(x+70,y+30,80,20);
-        out_label.setBounds(x+50,y+60,200,20);
+        out_label.setBounds(x,y+60,200,20);
         
         f.add(l1);
         f.add(t1);
@@ -42,7 +42,7 @@ public class Practical_9A implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         int n = Integer.parseInt(t1.getText());
-        out_label.setText("Factorial of " + n + " is " + factorial(n));
+        out_label.setText("Factorial of " + n + ": " + factorial(n));
     }
 
     public static void main(String args[]) {
