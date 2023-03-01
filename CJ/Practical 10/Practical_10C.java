@@ -92,6 +92,6 @@ class Practical_10C implements ActionListener {
 	}
 	
 	public static void main(String args[]) {
-		Practical_10C p1 = new Practical_10C();
+		new Practical_10C();
 	}
 }
