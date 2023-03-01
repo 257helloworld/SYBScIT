@@ -29,7 +29,9 @@ public class Practical_2B {
             case 2:
                 System.out.print("Enter binary number: ");
                 System.out.println("Decimal: " + binaryToDecimal(s.next()));
+                break;
         }
+        s.close();
 
     }
 }
