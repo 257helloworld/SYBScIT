@@ -50,7 +50,7 @@ class Practical_10B implements ActionListener {
 	}
 	
 	public void actionPerformed(ActionEvent e) {
-		int a, b, c;
+		int a, b;
 		a = Integer.parseInt(t1.getText());
 		b = Integer.parseInt(t2.getText());
 		if(e.getSource() == b1) {
