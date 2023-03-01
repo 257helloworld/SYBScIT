@@ -12,7 +12,7 @@ public class Practical_6A {
         side = s.nextDouble();
         System.out.println("-----------------------");
         Square s1 = new Square();
-        System.out.println("Area of rectangle: " + s1.area(side));
+        System.out.println("Area of Square: " + s1.area(side));
         System.out.println("-----------------------");
 
         System.out.print("Enter length & breadth of rectangle: ");
@@ -31,7 +31,7 @@ public class Practical_6A {
         System.out.println("Area of Triangle: " + t1.area(base, height));
         System.out.println("-----------------------");
 
-
+        s.close();
     }
 
 }

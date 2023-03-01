@@ -55,5 +55,7 @@ public class Practical_6C {
         System.out.println("-------------------------------");
         System.out.println("Multiplication: ");
         printMatrix(mul, r, c);   
+
+        s.close();
     }
 }

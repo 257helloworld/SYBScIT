@@ -50,6 +50,8 @@ public class Practical_6B {
         }   
         System.out.println("-------------------------------");
         System.out.println("Addition: ");
-        printMatrix(add, r, c);   
+        printMatrix(add, r, c);  
+        
+        s.close();
     }
 }
