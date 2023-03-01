@@ -46,6 +46,6 @@ public class Practical_9A implements ActionListener {
     }
 
     public static void main(String args[]) {
-        Practical_9A p1 = new Practical_9A();
+        new Practical_9A();
     }
 }

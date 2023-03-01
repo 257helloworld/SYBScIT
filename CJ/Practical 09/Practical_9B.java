@@ -83,6 +83,6 @@ public class Practical_9B implements ActionListener {
     }
 
     public static void main(String args[]) {
-        Practical_9B p1 = new Practical_9B();
+        new Practical_9B();
     }
 }
