@@ -1,0 +1,60 @@
+C51 COMPILER V9.60.7.0   PRACTICAL_1                                                       03/03/2023 08:22:25 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE PRACTICAL_1
+OBJECT MODULE PLACED IN .\Objects\Practical_1.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE Practical_1.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listin
+                    -gs\Practical_1.lst) TABS(2) OBJECT(.\Objects\Practical_1.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          
+   3          void delay(int time);
+   4          void allOff();
+   5          
+   6          // Variables
+   7          unsigned int i, j;
+   8          sbit green = P1 ^ 0;
+   9          sbit yellow = P1 ^ 1;
+  10          sbit red = P1 ^ 2;
+  11          
+  12          void main() {
+  13   1        while(1) {
+  14   2          allOff();
+  15   2          green = 1;
+  16   2          delay(500);
+  17   2          allOff();
+  18   2          yellow = 1;
+  19   2          delay(500);
+  20   2          allOff();
+  21   2          red = 1;
+  22   2          delay(500);
+  23   2        }
+  24   1      }
+  25          
+  26          void delay(int time) {
+  27   1        for(i = 0; i < time; i++) {
+  28   2          for(j = 0; j < 500; j++);
+  29   2        }   
+  30   1      }
+  31          
+  32          void allOff() {
+  33   1        red = 0;
+  34   1        green = 0;
+  35   1        yellow = 0;
+  36   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     83    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,53 @@
+C51 COMPILER V9.60.7.0   PRACTICAL_2                                                       03/03/2023 08:44:44 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE PRACTICAL_2
+OBJECT MODULE PLACED IN .\Objects\Practical_2.obj
+COMPILER INVOKED BY: C:\Keil_v5\C51\BIN\C51.EXE Practical_2.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND PRINT(.\Listin
+                    -gs\Practical_2.lst) TABS(2) OBJECT(.\Objects\Practical_2.obj)
+
+line level    source
+
+   1          #include<reg51.h>
+   2          
+   3          // Variables
+   4          unsigned int i, j;
+   5          sbit greenLED = P1 ^ 0;
+   6          sbit blueLED = P3 ^ 0;
+   7          
+   8          void delay(int time);
+   9          void toggleLED();
+  10          
+  11          void main() {
+  12   1        greenLED = 1;
+  13   1        blueLED = 0;
+  14   1        while(1) {
+  15   2          toggleLED();
+  16   2          delay(250);
+  17   2        }
+  18   1      }
+  19          
+  20          void delay(int time) {
+  21   1        for(i = 0; i < time; i++) {
+  22   2          for(j = 0; j < time; j++);
+  23   2        }
+  24   1      }
+  25          
+  26          void toggleLED() {
+  27   1        if(greenLED == 1) { greenLED = 0; } else { greenLED = 1; }
+  28   1        if(blueLED == 1) { blueLED = 0; } else { blueLED = 1; }
+  29   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     83    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

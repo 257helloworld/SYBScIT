@@ -1,0 +1,47 @@
+C51 COMPILER V9.60.7.0   PRACTICAL_8                                                       03/03/2023 16:24:59 PAGE 1   
+
+
+C51 COMPILER V9.60.7.0, COMPILATION OF MODULE PRACTICAL_8
+OBJECT MODULE PLACED IN .\Objects\Practical_8.obj
+COMPILER INVOKED BY: C:\Program Files\Keil_V5\C51\BIN\C51.exe Practical_8.c OPTIMIZE(8,SPEED) BROWSE DEBUG OBJECTEXTEND 
+                    -PRINT(.\Listings\Practical_8.lst) TABS(2) OBJECT(.\Objects\Practical_8.obj)
+
+line level    source
+
+   1          /* Serial I/O */
+   2          
+   3          #include<reg51.h>
+   4          
+   5          void send(char x);
+   6          
+   7          void main() {
+   8   1        TMOD = 0x20;
+   9   1        TH1 = 0xFD;
+  10   1        SCON = 0x50;
+  11   1        TR1 = 1;
+  12   1        send('Y');
+  13   1        send('E');
+  14   1        send('S');
+  15   1        send('\r');
+  16   1        while(1);
+  17   1      }
+  18          
+  19          void send(char x) {
+  20   1        SBUF = x;
+  21   1        while(TI == 0);
+  22   1        TI = 0;
+  23   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     41    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
